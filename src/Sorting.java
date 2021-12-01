@@ -1,9 +1,19 @@
 
+import java.util.Scanner;
+
 public class Sorting {
 
 	public static void main(String[] args) {
 		
-		int arr[] = {5, 9, 1, 2, 6, 8, 3, 7 ,4};
+		Scanner input = new Scanner(System.in);
+		
+		int arr[] = new int[6];
+		System.out.println("Enter 6 elements: ");
+		
+		for(int i = 0; i < 6; i++) {
+			int el = input.nextInt();
+			arr[i] = el;
+		}
 		
 		sort(arr);
 		print(arr);
